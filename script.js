@@ -242,7 +242,7 @@ console.log(n);
 //   console.log('Height is UNDEFINED');
 // }
 
-////////////////////////////////////
+/*////////////////////////////////////
 // Equality Operators: == vs. ===
 const age = "18";
 if (age === 18) console.log("You just became an adult :D (strict)");
@@ -265,3 +265,85 @@ if (favourite === 23) {
 }
 
 if (favourite !== 23) console.log("Why not 23?");
+*/
+/*
+////////////////////////////////////
+// Logical Operators
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log('Sarah is able to drive!');
+// } else {
+//   console.log('Someone else should drive...');
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log('Sarah is able to drive!');
+} else {
+  console.log('Someone else should drive...');
+}
+*/
+
+/*
+CHALLENGE #3
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas) {
+//   console.log('Dolphins win the trophy 🏆');
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log('Koalas win the trophy 🏆');
+// } else if (scoreDolphins === scoreKoalas) {
+//   console.log('Both win the trophy!');
+// }
+
+// BONUS 1
+const scoreDolphins = (97 + 112 + 80) / 3;
+const scoreKoalas = (109 + 95 + 50) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+  console.log('Dolphins win the trophy 🏆');
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+  console.log('Koalas win the trophy 🏆');
+} else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+  console.log('Both win the trophy!');
+} else {
+  console.log('No one wins the trophy 😭');
+}
+*/
+
+const day = "monday";
+
+switch (day) {
+  case "monday":
+    console.log("plan to to learn Html");
+    console.log("Go to take Nayan");
+    break;
+  case "tuesday":
+    console.log("Preapre Notes");
+    break;
+  case "wednesday":
+  case "thursay":
+    console.log("Writing codes");
+    break;
+  case "friday":
+    console.log("Doing Css Practice");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("To make mini projects");
+    break;
+  default:
+    console.log("Invalid day");
+}
